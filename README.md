@@ -25,7 +25,7 @@ How to use it ? For Example:
  
  WordRenderer wordRenderer = new DefaultWordRenderer(colors, fonts);
  
- Captcha captcha = new Captcha.Builder(150, 50).addText(wordRenderer)).build();
+ Captcha captcha = new Captcha.Builder(150, 50).addText(wordRenderer).build();
  
  //Output to file
  CaptchaServletUtil.writeImage(new FileOutputStream("d:\\captcha.png"), captcha.getImage());
@@ -38,21 +38,27 @@ How to use it ? For Example:
 if you do not like using it from maven repository,you can just download it by click (https://raw.githubusercontent.com/tavenli/simplecaptcha/master/release/1.2.2/simplecaptcha-1.2.2.jar)
 
 <br/>
+
 ![001](https://raw.githubusercontent.com/tavenli/simplecaptcha/master/example/captcha1.png)
 
 <br/>
+
 ![002](https://raw.githubusercontent.com/tavenli/simplecaptcha/master/example/captcha2.png)
 
 <br/>
+
 ![003](https://raw.githubusercontent.com/tavenli/simplecaptcha/master/example/example_big.png)
 
 <br/>
+
 ![004](https://raw.githubusercontent.com/tavenli/simplecaptcha/master/example/example_chinese.png)
 
 <br/>
+
 ![005](https://raw.githubusercontent.com/tavenli/simplecaptcha/master/example/example_multi.png)
 
 <br/>
+
 ![006](https://raw.githubusercontent.com/tavenli/simplecaptcha/master/example/example_outline_noisy.png)
 
 
