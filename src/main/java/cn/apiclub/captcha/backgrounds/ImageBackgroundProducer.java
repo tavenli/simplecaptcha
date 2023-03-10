@@ -27,7 +27,7 @@ public class ImageBackgroundProducer implements BackgroundProducer {
     @Override
     public BufferedImage getBackground(int width, int height) {
         try {
-            BufferedImage img = ImageIO.read(FileUtil.readResource(("/backgrounds/" + this.imageId + ".png"));
+            BufferedImage img = ImageIO.read(FileUtil.readResource(("/backgrounds/" + this.imageId + ".png")));
             Graphics2D graphics  = img.createGraphics();
             graphics.setPaint(null);
             graphics.drawImage(img, 0, 0, null);
